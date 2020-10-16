@@ -1,0 +1,37 @@
+/* Custom CSS */
+/* STEP 12: Using your browser's DOM Inspector, figure out how the default .carousel-caption is positioned with CSS, and change it */
+
+/* putting carosel captions at the bottom */
+.carousel-caption {
+  bottom: 65%;
+  padding: 0;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  color: #ff000083;
+}
+
+/* carousel slide indicators at top of carousel */
+.carousel-indicators {
+  top: 0;
+  /* bottom: 100%; */
+}
+
+/* STEP 13: View the result in the browser, then head back to index.html */
+/* The below class and animation keyframes are used by the JavaScript */
+.zoomit {
+  animation: zoom-in-out 0.5s;
+}
+@keyframes zoom-in-out {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.4);
+    transform-origin: center top;
+  }
+  to {
+    transform: none;
+  }
+}
