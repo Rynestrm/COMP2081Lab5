@@ -3,7 +3,6 @@
 $('#carousel-cars').carousel({
   // STEP 16: Change the interval to 5 seconds (set in milliseconds)
   interval: 5000,
-  //   wrap: false,
   touch: false,
   // keyboard controls disabled
   keyboard: false,
@@ -18,6 +17,3 @@ $('#carousel-cars').on('slid.bs.carousel', function () {
   // adding the css animation class
   $('.carousel-caption').addClass('zoomit');
 });
-
-// the logs don't work in firefox for some reason
-console.log('test');
